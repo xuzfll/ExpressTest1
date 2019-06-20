@@ -15,6 +15,7 @@ router.get('/', (req,res)=>{
         console.log (`read api/courses sortBy=${sortBy}`);
     }
     else {
+        
         courses.sort(dynamicSort("id"));
         console.log (`read api/courses sortBy=id`);
     };
